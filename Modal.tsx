@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 interface Props {
   isOpen: boolean;
   onClose: () => void;
-  modalContent: ReactNode;
+  children: ReactNode;
 }
 
 function Modal(props: Props) {
@@ -23,7 +23,7 @@ function Modal(props: Props) {
         tabIndex={-1}
       >
         {/* Insert Modal Content Here */}
-        {props.modalContent}
+        {props.chilren}
         {/*  */}
       </div>
     </div>
